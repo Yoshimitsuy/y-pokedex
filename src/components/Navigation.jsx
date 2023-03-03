@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import { PokemonContext } from '../context/PokemonContext';
 // import imgTeste from '../assets/img-teste.svg';
 
 export const Navigation = () => {
+
+  const context = useContext(PokemonContext);
+  console.log(context);
+
   return (
     <>
       <header className='container'>
