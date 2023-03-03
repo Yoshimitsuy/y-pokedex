@@ -101,3 +101,24 @@ header form {
 	background-color: var(--color-primary-hover);
 	color: #000
 }
+
+/* step 2 */
+/* filter button */
+
+.container-filter {
+	display: flex;
+}
+
+.icon-filter {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.icon-filter .icon {
+	width: 30px;
+	height: 30px;
+	stroke: red
+}

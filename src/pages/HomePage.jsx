@@ -26,7 +26,7 @@ export const HomePage = () => {
               />
             </svg>
             
-            <span>Filtrar</span>
+            <span>filter</span>
 
         </div>
 
