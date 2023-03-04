@@ -1,5 +1,5 @@
 import React from 'react'
-import { PokemonList } from '../components/PokemonList'
+import { PokemonList, FilterBar } from '../components';
 
 export const HomePage = () => {
   return (
@@ -33,7 +33,7 @@ export const HomePage = () => {
       </div>
 
       <PokemonList />
-
+      <FilterBar />
     </>
     
   )
