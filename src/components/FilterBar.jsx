@@ -18,177 +18,177 @@ export const FilterBar = () => {
             id='grass'
           />
           
-          <label htmlFor="">grass</label>
+          <label htmlFor="grass">grass</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='fire'
+            id='fire'
           />
           
-          <label htmlFor="">fire</label>
+          <label htmlFor="fire">fire</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='bug'
+            id='bug'
           />
           
-          <label htmlFor="">bug</label>
+          <label htmlFor="bug">bug</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='fairy'
+            id='fairy'
           />
           
-          <label htmlFor="">fairy</label>
+          <label htmlFor="fairy">fairy</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='dragon'
+            id='dragon'
           />
           
-          <label htmlFor="">dragon</label>
+          <label htmlFor="dragon">dragon</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='ghost'
+            id='ghost'
           />
           
-          <label htmlFor="">ghost</label>
+          <label htmlFor="ghost">ghost</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='ground'
+            id='ground'
           />
           
-          <label htmlFor="">earth</label>
+          <label htmlFor="ground">ground</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='normal'
+            id='normal'
           />
           
-          <label htmlFor="">normal</label>
+          <label htmlFor="normal">normal</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='psychic'
+            id='psychic'
           />
           
-          <label htmlFor="">psychic</label>
+          <label htmlFor="psychic">psychic</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='steel'
+            id='steel'
           />
           
-          <label htmlFor="">steel</label>
+          <label htmlFor="steel">steel</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='dark'
+            id='dark'
           />
           
-          <label htmlFor="">sinister</label>
+          <label htmlFor="dark">dark</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='electric'
+            id='electric'
           />
           
-          <label htmlFor="">electric</label>
+          <label htmlFor="electric">electric</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='fighting'
+            id='fighting'
           />
           
-          <label htmlFor="">struggle</label>
+          <label htmlFor="fighting">fighting</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='flying'
+            id='flying'
           />
           
-          <label htmlFor="">flying</label>
+          <label htmlFor="flying">flying</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='ice'
+            id='ice'
           />
           
-          <label htmlFor="">ice</label>
+          <label htmlFor="ice">ice</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='poison'
+            id='poison'
           />
           
-          <label htmlFor="">poison</label>
+          <label htmlFor="poison">poison</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='rock'
+            id='rock'
           />
           
-          <label htmlFor="">stone</label>
+          <label htmlFor="rock">rock</label>
         </div>
 
         <div className='group-type'>
           <input
             type="checkbox"
-            name='grass'
-            id='grass'
+            name='water'
+            id='water'
           />
           
-          <label htmlFor="">water</label>
+          <label htmlFor="water">water</label>
         </div>
 
       </div>
