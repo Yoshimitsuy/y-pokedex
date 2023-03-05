@@ -61,7 +61,7 @@ export const PokemonPage = () => {
 
                       <div className='group-info'>
                         <p>height</p>
-                        <span>{ pokemon.height } ?</span>
+                        <span>{ pokemon.height }m</span>
                       </div>
 
                       <div className='group-info'>
@@ -75,7 +75,7 @@ export const PokemonPage = () => {
 
                 </div>
 
-                <div className='container-status'>
+                <div className='container-stats'>
 
                   <h1>status</h1>
                   <div className='stats'>
@@ -85,6 +85,46 @@ export const PokemonPage = () => {
                       <div className='progress-bar'></div>
                       <span className='counter-stat'>
                       { pokemon.stats[0].base_stat }
+                      </span>
+                    </div>
+
+                    <div className='stat-group'>
+                      <span>attack</span>
+                      <div className='progress-bar'></div>
+                      <span className='counter-stat'>
+                      { pokemon.stats[1].base_stat }
+                      </span>
+                    </div>
+
+                    <div className='stat-group'>
+                      <span>defense</span>
+                      <div className='progress-bar'></div>
+                      <span className='counter-stat'>
+                      { pokemon.stats[2].base_stat }
+                      </span>
+                    </div>
+
+                    <div className='stat-group'>
+                      <span>special attack</span>
+                      <div className='progress-bar'></div>
+                      <span className='counter-stat'>
+                      { pokemon.stats[3].base_stat }
+                      </span>
+                    </div>
+
+                    <div className='stat-group'>
+                      <span>special defense</span>
+                      <div className='progress-bar'></div>
+                      <span className='counter-stat'>
+                      { pokemon.stats[4].base_stat }
+                      </span>
+                    </div>
+
+                    <div className='stat-group'>
+                      <span>speed</span>
+                      <div className='progress-bar'></div>
+                      <span className='counter-stat'>
+                      { pokemon.stats[5].base_stat }
                       </span>
                     </div>
 
