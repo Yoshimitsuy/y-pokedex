@@ -10,7 +10,7 @@ export const Navigation = () => {
   const navigate = useNavigate();
 
   const onSearchSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     navigate('/search', {
       state: valueSearch,
     });

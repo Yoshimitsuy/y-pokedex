@@ -12,7 +12,7 @@ export const PokemonProvider = ({ children }) => {
 
   // customHook - useForm
   const { valueSearch, onInputChange, onResetForm } = useForm({
-    valueSearch: ''
+    valueSearch: '',
   })
 
   // simple states
@@ -23,7 +23,7 @@ export const PokemonProvider = ({ children }) => {
   const getAllPokemons = async(limit = 50) => {
     const baseURL = 'https://pokeapi.co/api/v2/';
 
-    const res = await fetch(`${baseURL}pokemon?limit=${limit}$offset=${offset}`);
+    const res = await fetch(`${baseURL}pokemon?limit=${limit}&offset=${offset}`);
     const data = await res.json();
 
     const promises = data.results.map(async(pokemon) => {
@@ -73,11 +73,18 @@ export const PokemonProvider = ({ children }) => {
 
   useEffect(() => {
     getAllPokemons();
-  }, []);
+  }, [offset]);
 
   useEffect(() => {
     getGlobalPokemons();
   }, []);
+
+  // button load more
+  const onClickLoadMore = () => {
+    setOffset(offset + 50);
+  };
+
+
   
 
   return (
@@ -88,7 +95,8 @@ export const PokemonProvider = ({ children }) => {
         onResetForm,
         allPokemons,
         globalPokemons,
-        getPokemonById
+        getPokemonById,
+        onClickLoadMore,
       }}
     >
       { children }
