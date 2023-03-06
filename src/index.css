@@ -123,6 +123,10 @@ header form {
 	stroke: red
 }
 
+.icon-filter .icon:active {
+	stroke: #555;
+}
+
 /* step 3 */
 /* card list */
 
@@ -260,7 +264,7 @@ header form {
 	justify-content: center;
 	position: fixed;
 	top: 0;
-	/* left: -300px; */
+	left: -300px;
 	width: 250px;
 	color: #555;
 	background-color: #f2f2f2;
@@ -396,11 +400,15 @@ header form {
 
 /* search page */
 
+.p-search {
+	margin-bottom: 30px;
+	font-size: 21px;
+}
 
-
-
-
-
+.p-search span {
+	font-weight: 700;
+	color: var(--color-primary);
+}
 
 /* loader */
 
@@ -409,4 +417,29 @@ header form {
 	justify-content: center;
 	margin: 200px 0;
 	color: var(--color-primary);
+}
+
+/* step 6 */
+/* load more button */
+
+.container-btn-load-more {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.btn-load-more {
+	border: none;
+	padding: 15px 40px;
+	font-family: inherit;
+	background-color: var(--color-primary);
+	color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.btn-load-more:hover {
+	background-color: var(--color-primary-hover);
+	color: #000;
 }

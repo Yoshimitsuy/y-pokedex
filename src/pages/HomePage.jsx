@@ -4,14 +4,14 @@ import { PokemonContext } from '../context/PokemonContext';
 
 export const HomePage = () => {
 
-  const { onClickLoadMore } = useContext(PokemonContext);
+  const { onClickLoadMore, active, setActive } = useContext(PokemonContext);
 
   return (
     <>
 
       <div className='container-filter container'>
       
-        <div className="icon-filter">
+        <div className="icon-filter" onClick={ () => setActive(!active) }>
             
             <svg
               xmlns='http://www.w3.org/2000/svg'

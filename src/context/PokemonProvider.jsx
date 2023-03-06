@@ -16,8 +16,8 @@ export const PokemonProvider = ({ children }) => {
   })
 
   // simple states
-  const [ loadng, setloadng ] = useState(true);
-  const [ active, setactive ] = useState(false);
+  const [ loading, setloading ] = useState(true);
+  const [ active, setActive ] = useState(false);
 
   // get 50 pokemóns
   const getAllPokemons = async(limit = 50) => {
@@ -38,7 +38,7 @@ export const PokemonProvider = ({ children }) => {
       ...allPokemons,
       ...results
     ]);
-    setloadng(false);
+    setloading(false);
   }
 
   // all pokemons
@@ -57,7 +57,7 @@ export const PokemonProvider = ({ children }) => {
     const results = await Promise.all(promises);
 
     setGlobalPokemons(results);
-    setloadng(false);
+    setloading(false);
   };
 
   // get pokemon by ID
@@ -97,6 +97,14 @@ export const PokemonProvider = ({ children }) => {
         globalPokemons,
         getPokemonById,
         onClickLoadMore,
+
+        loading,
+        setloading,
+
+        active,
+        setActive,
+
+        
       }}
     >
       { children }
