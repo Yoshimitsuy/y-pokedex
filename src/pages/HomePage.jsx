@@ -1,7 +1,11 @@
-import React from 'react'
-import { PokemonList } from '../components/PokemonList'
+import React, { useContext } from 'react'
+import { PokemonList, FilterBar } from '../components';
+import { PokemonContext } from '../context/PokemonContext';
 
 export const HomePage = () => {
+
+  const { onClickLoadMore } = useContext(PokemonContext);
+
   return (
     <>
 
@@ -26,14 +30,19 @@ export const HomePage = () => {
               />
             </svg>
             
-            <span>Filtrar</span>
+            <span>filter</span>
 
         </div>
 
       </div>
 
       <PokemonList />
-
+      <FilterBar />
+      <div className="container-btn-load-more container">
+        <button className='btn-load-more' onClick={ onClickLoadMore }>
+          load more filhadaputinhas
+        </button>
+      </div>
     </>
     
   )
