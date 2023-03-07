@@ -3,7 +3,7 @@ import { PokemonContext } from '../context/PokemonContext';
 
 export const FilterBar = () => {
 
-  const { active } = useContext(PokemonContext)
+  const { active, handleCheckbox } = useContext(PokemonContext)
 
   return (
     <div className={`container-filters ${active ? 'active' : ''}`}>
@@ -16,6 +16,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='grass'
             id='grass'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="grass">grass</label>
@@ -26,6 +27,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='fire'
             id='fire'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="fire">fire</label>
@@ -36,6 +38,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='bug'
             id='bug'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="bug">bug</label>
@@ -46,6 +49,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='fairy'
             id='fairy'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="fairy">fairy</label>
@@ -56,6 +60,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='dragon'
             id='dragon'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="dragon">dragon</label>
@@ -66,6 +71,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='ghost'
             id='ghost'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="ghost">ghost</label>
@@ -76,6 +82,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='ground'
             id='ground'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="ground">ground</label>
@@ -86,6 +93,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='normal'
             id='normal'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="normal">normal</label>
@@ -96,6 +104,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='psychic'
             id='psychic'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="psychic">psychic</label>
@@ -106,6 +115,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='steel'
             id='steel'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="steel">steel</label>
@@ -116,6 +126,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='dark'
             id='dark'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="dark">dark</label>
@@ -126,6 +137,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='electric'
             id='electric'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="electric">electric</label>
@@ -136,6 +148,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='fighting'
             id='fighting'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="fighting">fighting</label>
@@ -146,6 +159,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='flying'
             id='flying'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="flying">flying</label>
@@ -156,6 +170,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='ice'
             id='ice'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="ice">ice</label>
@@ -166,6 +181,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='poison'
             id='poison'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="poison">poison</label>
@@ -176,6 +192,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='rock'
             id='rock'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="rock">rock</label>
@@ -186,6 +203,7 @@ export const FilterBar = () => {
             type="checkbox"
             name='water'
             id='water'
+            onChange={ handleCheckbox }
           />
           
           <label htmlFor="water">water</label>

@@ -27,7 +27,7 @@
 
 	--color-bg: #0c0624;
 	--color-bg-card: #100f41;
-	--color-bg-card-img: #485754;
+	--color-bg-card-img: #8c9d9a;
 	background-color: var(--color-bg);
 }
 
@@ -86,7 +86,12 @@ header form {
 	border-radius: 10px;
 	background-color: var(--color-bg);
 	padding-left: 20px;
+	padding-right: 20px;
 	color: #fff;
+}
+
+.form-group input:active {
+	background-color: var(--color-bg);
 }
 
 .icon-search {
@@ -118,6 +123,7 @@ header form {
 
 .container-filter {
 	display: flex;
+	justify-content: end;
 }
 
 .icon-filter {
@@ -132,7 +138,8 @@ header form {
 .icon-filter .icon {
 	width: 30px;
 	height: 30px;
-	stroke: red
+	stroke: red;
+	order: 2;
 }
 
 .icon-filter .icon:active {
@@ -153,7 +160,8 @@ header form {
 	text-decoration: none;
 	border-radius: 20px;
 	padding: 10px;
-	background-color: var(--color-bg-card)
+	box-shadow: 12px 16px rgba(0, 0, 0, 0.403);
+	background-color: var(--color-bg-card);
 }
 
 .card-img {
