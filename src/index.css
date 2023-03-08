@@ -28,6 +28,16 @@
 	--color-bg: #0c0624;
 	--color-bg-card: #100f41;
 	--color-bg-card-img: #8c9d9a;
+
+	--color-animation-1: rgba(188, 208, 205, 0.15);
+	--color-animation-2: rgba(7, 218, 222, 0.94);
+	--color-animation-3: rgba(208, 225, 11, 0.94);
+
+	--color-rgb-1: rgb(3, 106, 10);
+	--color-rgb-2: rgb(65, 99, 191);
+	--color-rgb-3: rgba(176, 4, 4, 0.995);
+	--color-rgb-4: rgba(155, 7, 128, 0.995);
+
 	background-color: var(--color-bg);
 }
 
@@ -58,6 +68,19 @@ header {
 
 .logo img {
 	width: 150px;
+	box-shadow: 6px 6px 8px var(--color-animation-1);
+	transition: box-shadow 0.3s ease-in-out;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.logo img:hover {
+	box-shadow: 6px 6px 10px var(--color-animation-2);
+}
+
+.logo img:active {
+	box-shadow: 2px 2px 6px var(--color-animation-3);
+	transition:cubic-bezier(0, 1, 1, 0);
 }
 
 header form {
@@ -74,6 +97,12 @@ header form {
 	border: 3px solid #fff;
 	padding: 15px 20px;
 	border-radius: 25px;
+	box-shadow: 6px 8px 4px var(--color-animation-1);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-group:hover {
+	box-shadow: 2px 4px 10px var(--color-animation-2);
 }
 
 .form-group input {
@@ -90,7 +119,7 @@ header form {
 	color: #fff;
 }
 
-.form-group input:active {
+.form-group input:hover {
 	background-color: var(--color-bg);
 }
 
@@ -111,11 +140,19 @@ header form {
 	cursor: pointer;
 	font-weight: 500px;  /*mudou nada ?? */
 	letter-spacing: 1px;
+	box-shadow: 6px 8px 4px rgba(188, 208, 205, 0.15);
+	transition: box-shadow 0.3s ease-in-out;
 }
 
 .btn-search:hover {
 	background-color: var(--color-primary-hover);
+	box-shadow: 2px 4px 10px var(--color-animation-2);
 	color: #000
+}
+
+.btn-search:active {
+	box-shadow: 2px 2px 6px var(--color-animation-3);
+	transition:cubic-bezier(0, 1, 1, 0);
 }
 
 /* step 2 */
@@ -123,7 +160,52 @@ header form {
 
 .container-filter {
 	display: flex;
-	justify-content: end;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+@keyframes rgb-name {
+	0% {
+		color: var(--color-rgb-1)
+	}
+	33% {
+		color: var(--color-rgb-2)
+	}
+	66% {
+		color: var(--color-rgb-3)
+	}
+	100% {
+		color: var(--color-rgb-4)
+	}
+}
+
+.rafael {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 80px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 700;
+	width: 200px;
+}
+
+.rafael-link {
+	text-decoration: none;
+	animation: rgb-name 6s linear infinite;
+	box-shadow: 4px 4px 4px var(--color-animation-1);
+	transition: box-shadow 0.3s ease-in-out;
+	border-radius: 10px;
+	padding: 4px;
+	width: 150px;
+}
+
+.rafael-link:hover {
+	box-shadow: 1px 2px 4px var(--color-animation-2);
+}
+
+.rafael-link:active {
+	box-shadow: 2px 2px 6px var(--color-animation-3);
+	transition:cubic-bezier(0, 1, 1, 0);
 }
 
 .icon-filter {
@@ -133,6 +215,18 @@ header form {
 	margin-bottom: 20px;
 	cursor: pointer;
 	color: #fff;
+	border-radius: 10px;
+	box-shadow: 4px 6px 6px var(--color-animation-1);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.icon-filter:hover {
+	box-shadow: 4px 6px 6px var(--color-animation-2);
+}
+
+.icon-filter:active {
+	box-shadow: 6px 8px 4px var(--color-animation-3);
+	transition:cubic-bezier(0, 1, 1, 0);
 }
 
 .icon-filter .icon {
@@ -160,8 +254,18 @@ header form {
 	text-decoration: none;
 	border-radius: 20px;
 	padding: 10px;
-	box-shadow: 12px 16px rgba(0, 0, 0, 0.403);
 	background-color: var(--color-bg-card);
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.403);
+	transition: box-shadow 0.4s ease-in-out;
+}
+
+.card-pokemon:hover {
+	box-shadow: 0px 0px 10px 10px var(--color-animation-2);
+}
+
+.card-pokemon:active {
+	box-shadow: 0px 0px 10px 10px var(--color-animation-3);
+	transition:cubic-bezier(0, 1, 1, 0);
 }
 
 .card-img {
@@ -387,11 +491,13 @@ header form {
 	flex-direction: column;
 	order: 1;
 	flex: 1;
+	color: #fff;
 }
 
 .container-info-pokemon h1 {
 	text-align: right;
 	font-size: 60px;
+	color: #fff;
 }
 
 .info-pokemon {
@@ -417,6 +523,7 @@ header form {
 	display: flex;
 	gap: 50px;
 	align-items: center;
+	color: #fff;
 }
 
 .stats {
@@ -424,6 +531,7 @@ header form {
 	flex-direction: column;
 	gap: 20px;
 	flex: 1;
+	color: #fff;
 }
 
 .stat-group {
@@ -435,11 +543,11 @@ header form {
 .stat-group span {
 	flex: 20%;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .progress-bar {
-	width: 100%;
+	width: 60%;
 	height: 30px;
 	background-color: var(--color-primary);
 	border-radius: 10px;
@@ -450,6 +558,7 @@ header form {
 .p-search {
 	margin-bottom: 30px;
 	font-size: 21px;
+	color: #fff;
 }
 
 .p-search span {

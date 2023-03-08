@@ -10,6 +10,16 @@ export const HomePage = () => {
     <>
 
       <div className='container-filter container'>
+
+        <div className='rafael'>
+          <a 
+            className='rafael-link' 
+            href='https://yoshimitsuy-io.vercel.app/'
+            target='_blank'
+          >
+            <span>Rafael Yoshimitsuy</span>
+          </a>
+        </div>
       
         <div className="icon-filter" onClick={ () => setActive(!active) }>
             
